@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+* {
+  font-family: "Electrolize", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  color: rgb(166, 168, 170);
+  position: fixed;
+
+  width: 100%;
+
+  background-color: black;
+  top: 0;
+}
+.active {
+  background-color: rgb(251, 251, 247);
+  color: #0f0c0c;
+}
+.navbar-menu {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: larger;
+}
+.navbar-menu i:hover {
+  cursor: pointer;
+  color: rgb(222, 222, 219);
+}
+.navbar-menu-1 {
+  font-weight: bold;
+  color: azure;
+}
+
+.logo {
+  font-weight: bold;
+
+  color: rgb(213, 6, 47);
+}
+
+.sidenavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 50px;
+  color: aliceblue;
+  gap: 50px;
+  font-weight: bolder;
+  position: fixed;
+  top: 100px;
+}
+.sidenavbar i {
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(166, 168, 170);
+}
+.sidenavbar i:hover {
+  cursor: pointer;
+  color: beige;
+  scale: 1.3;
+}
+.cont {
+  background-color: black;
+  width: 100%;
+  height: 300vh;
+  position: relative;
+}
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  place-items: center;
+}
+.profile-img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-act {
+  position: relative;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  color: rgb(247, 165, 22);
+  align-items: center;
+  gap: 10px;
+  border-radius: 115px;
+  padding: 2px;
+}
+.act {
+  background-color: rgb(2, 2, 3);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+}
+.sect {
+  background: url("./image/spiderman.jpg");
+  background-size: 100% 100%;
+  object-fit: cover;
+  height: 100vh;
+  width: 175%;
+  margin-left: 60px;
+  margin-top: 150px;
+}
+.title {
+  margin: 20px;
+}
+.title p {
+  width: 500px;
+  background-color: beige;
+  opacity: 0.5;
+  height: 150px;
+  border-radius: 10px;
+  color: black;
+}
+.btn {
+  display: flex;
+
+  gap: 20px;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s {
+  width: 200vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+.ana {
+  flex: 10;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+.slt {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  padding: 5px;
+  border: 1px solid wheat;
+  background: #000;
+  width: 200px;
+}
+
+.sleider {
+  height: 400px;
+  width: 400px;
+}
+
+.sleider:hover {
+  scale: 1.1;
+}
+.sleiderw {
+  height: 300px;
+  width: 300px;
+}
+
+.sld {
+  color: transparent;
+  position: absolute;
+  top: -10px;
+  display: none;
+
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  left: 40px;
+  gap: 40px;
+  place-items: center;
+  font-weight: bold;
+}
+.sld:hover {
+  color: rgb(68, 67, 68);
+}
+.img-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  transition: all 2s ease-in-out;
+  position: relative;
+}
+.gnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  margin-top: 40px;
+}
+.h {
+  color: rgb(197, 196, 193);
+}
+.at {
+  color: rgb(255, 255, 252);
+  size: 100px;
+  font-size: 150px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  right: 220px;
+  top: 100px;
+}
+.imgcom {
+  position: relative;
+}
+
+.img-main {
+  display: flex; /* Resimleri yan yana dizer */
+  overflow: hidden; /* Taşan resimleri gizler */
+  transition: transform 0.5s ease-in-out; /* Kayma animasyonu */
+  width: 400vh;
+}
+
+.sleider {
+  min-width: 100px; /* Her resmin minimum genişliği */
+  margin-right: 10px;
+}
